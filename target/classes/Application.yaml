@@ -1,0 +1,6 @@
+server:
+   port: 8081
+   
+kubernetes:
+   host: 127.0.0.1:55647
+   apiPath: /api/v1
