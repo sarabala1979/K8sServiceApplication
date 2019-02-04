@@ -14,11 +14,10 @@ public class RoleService {
 
 	public String getRoles(String nameSpace) {
 		String url = "127.0.0.1:55647/api/v1/namespaces/"+nameSpace+"/roles";
-		return externalClientService.executeGet(url, null, V1RoleList.class);
-		
+		return externalClientService.executeGet(url, null, V1RoleList.class);	
 	}
 	
-	public String getClusterRoleList((String nameSpace) {
+	public String getClusterRoleList(String nameSpace) {
 		String url = "127.0.0.1:55647/api/v1/namespaces/"+nameSpace+"/cluterroles";
 		return externalClientService.executeGet(url, null, V1ClusterRoleList.class);
 	}
